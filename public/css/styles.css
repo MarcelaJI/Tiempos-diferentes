@@ -312,6 +312,7 @@ img{
 
 .footer{
     
+ 
     margin: 4rem;
     text-align: center;
 }
@@ -366,5 +367,11 @@ img{
 
 }
 
+.mail_contacto{
+    text-align: center;
+}
 
+.mail_contacto a{
+    text-decoration: none;
+}
 
