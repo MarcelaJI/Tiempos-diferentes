@@ -24,18 +24,14 @@
 
  <nav class="header_nav">
     <ul>
-       <li><a href="/sobremi" class="">Sobre mí</a></li>
+       <li><a href="/sobremi" class="<%= isActiveRoute('/sobremi', currentRoute) %>">Sobre mí</a></li>
        <li><a href="" class="">Evidencias</a></li>
        <li><a href="" class="">Publicaciones</a></li>
-       <li><a href="/contacto" class="">Contacto</a></li>
+       <li><a href="/contacto" class="<%= isActiveRoute('/contacto', currentRoute) %>">Contacto</a></li>
       
     </ul>
 
  </nav>
 
- <div class="header_button">
-    <button class="searcBtn" aria-expanded="false">Buscar <i class="fa-solid fa-magnifying-glass"></i></button>
-   
 
- </div>
 </header>

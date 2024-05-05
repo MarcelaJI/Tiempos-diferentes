@@ -1,0 +1,22 @@
+<a href="/dasboard">&larr; Atrás</a>
+<div class="admin-title">
+  <h2>Ver | Editar Publicación</h2>  
+
+
+ <form action="/delete-post/<%= data._id %>?_method=DELETE" method="POST">
+<input type="submit" value="Borrar" class="btn-delete btn">
+</form>
+
+
+</div>
+
+<form action="/edit-post/<%= data._id %>?_method=PUT" method="POST">
+
+   <label for="title"><b>Título</b></label>
+   <input type="text" placeholder="Título de la publicación" name="title" value="<%= data.title %>">
+
+   <label for="body"><b>Contenido</b></label>
+   <textarea name="body" cols="80" rows="20"><%= data.body %></textarea>
+
+   <input type="submit" value="Actualizar" class="btn">
+</form>

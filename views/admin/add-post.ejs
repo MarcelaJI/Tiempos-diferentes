@@ -1,0 +1,15 @@
+<a href="/dasboard">&larr; Atrás</a>
+<div class="admin-title">
+  <h2>Agregar nueva publicación</h2>  
+</div>
+
+<form action="/add-post" method="POST">
+
+   <label for="title"><b>Título</b></label>
+   <input type="text" placeholder="Título de la publicación" name="title">
+
+   <label for="body"><b>Contenido</b></label>
+   <textarea name="body"  cols="80" rows="20"></textarea>
+
+   <input type="submit" value="Agregar" class="btn">
+</form>
